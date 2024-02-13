@@ -1,0 +1,22 @@
+<section class="header-mobile">
+
+  <div class="header-theme">
+    <div *ngIf="theme == 'light'; then thenBlock else elseBlock"></div>
+    <ng-template #thenBlock>
+      <button (click)="setNewTheme(theme)">
+        <img src="../../../assets/images/icon-moon.svg" alt="menu" srcset="../../../assets/images/icon-moon.svg">
+      </button>
+    </ng-template>
+    <ng-template #elseBlock>
+      <button (click)="setNewTheme(theme)">
+        <img src="../../../assets/images/icon-sun.svg" alt="menu" srcset="../../../assets/images/icon-sun.svg">
+      </button>
+    </ng-template>
+  </div>
+  <button class="menu-icon">
+    <img src="../../../assets/images/icon-menu.svg" alt="menu" srcset="../../../assets/images/icon-menu.svg">
+  </button>
+
+  <!-- Va en la siguiente capa cuando el usuario presione el icono -->
+  <!-- <button (click)="setNewTheme(theme)">{{theme == 'light' ? 'Dark Mode' : 'Light Mode'}}</button> -->
+</section>

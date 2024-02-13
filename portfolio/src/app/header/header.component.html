@@ -1,4 +1,4 @@
 <header>
-  <h2>Menu</h2>
-  <button (click)="setTheme(theme)">{{theme == 'light' ? 'Dark Mode' : 'Light Mode'}}</button>
+  <app-header-mobile [theme]="theme" (newTheme)="setTheme(theme)"></app-header-mobile>
+  <app-header-desktop [theme]="theme" (newTheme)="setTheme(theme)"></app-header-desktop>
 </header>

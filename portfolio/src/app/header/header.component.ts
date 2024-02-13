@@ -17,7 +17,6 @@ export class HeaderComponent implements OnInit {
   }
 
   setTheme(theme: string) {
-
     if (theme === 'light')
       theme = 'dark';
     else
