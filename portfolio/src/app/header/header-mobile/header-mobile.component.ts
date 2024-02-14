@@ -9,7 +9,13 @@ export class HeaderMobileComponent {
   @Input() theme = '';
   @Output() newTheme = new EventEmitter<string>();
 
+  enableMobileMenu = false;
+
   setNewTheme(theme: string) {
     this.newTheme.emit(theme);
+  }
+
+  showMobileMenu() {
+    this.enableMobileMenu = !this.enableMobileMenu;
   }
 }

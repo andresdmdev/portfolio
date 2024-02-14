@@ -1,5 +1,4 @@
 <section class="header-mobile">
-
   <div class="header-theme">
     <div *ngIf="theme == 'light'; then thenBlock else elseBlock"></div>
     <ng-template #thenBlock>
@@ -13,10 +12,23 @@
       </button>
     </ng-template>
   </div>
-  <button class="menu-icon">
+  <button class="menu-icon" (click)="showMobileMenu()">
     <img src="../../../assets/images/icon-menu.svg" alt="menu" srcset="../../../assets/images/icon-menu.svg">
   </button>
-
-  <!-- Va en la siguiente capa cuando el usuario presione el icono -->
-  <!-- <button (click)="setNewTheme(theme)">{{theme == 'light' ? 'Dark Mode' : 'Light Mode'}}</button> -->
 </section>
+
+<div *ngIf="enableMobileMenu">
+  <section class="menu-mobile">
+    <div class="menu-background" (click)="showMobileMenu()"></div>
+    <section class="menu-mobile-section">
+      <div class="menu-header">
+        <img src="" alt="">
+        <button (click)="showMobileMenu()">
+          <img class="close-icon" src="../../../assets/images/icon-close.svg" alt="menu"
+            srcset="../../../assets/images/icon-close.svg">
+        </button>
+      </div>
+      <h2>Andres Marquez</h2>
+    </section>
+  </section>
+</div>
