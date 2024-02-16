@@ -3,8 +3,8 @@
 .header-mobile {
   display: flex;
   justify-content: right;
-  gap: 32px;
   align-items: center;
+  gap: 32px;
 }
 
 .menu-mobile {
@@ -40,7 +40,11 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 55px;
-    align-items: center;
+    align-items: flex-start;
+
+    p {
+      margin: 0;
+    }
   }
 
   .close-icon {
