@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { ProfileComponent } from './home/profile/profile.component';
 import { HeaderMobileComponent } from './header/header-mobile/header-mobile.component';
 import { HeaderDesktopComponent } from './header/header-desktop/header-desktop.component';
+import { LanguageDropdownComponent } from './components/language-dropdown/language-dropdown.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { HeaderDesktopComponent } from './header/header-desktop/header-desktop.c
     HeaderComponent,
     ProfileComponent,
     HeaderMobileComponent,
-    HeaderDesktopComponent
+    HeaderDesktopComponent,
+    LanguageDropdownComponent
   ],
   imports: [
     BrowserModule
