@@ -1,10 +1,12 @@
-<div class="container" (click)="toggleOptions()">
-  <img class="flag" [src]="'../../../assets/images/' + currentImage" alt="us-flag">
-  <p>{{currentLanguage}}</p>
-  <img class="arrow" src="../../../assets/images/icon-down-arrow.svg" alt="icon-down-arrow">
-</div>
+<div class="container">
+  <div class="container-main" (click)="toggleOptions()">
+    <img class="flag" [src]="'../../../assets/images/' + currentImage" alt="us-flag">
+    <p>{{currentLanguage}}</p>
+    <img class="arrow" src="../../../assets/images/icon-down-arrow.svg" alt="icon-down-arrow">
+  </div>
 
-<div *ngIf="showOptions" class="container-next">
-  <img class="flag" src="../../../assets/images/us-flag.svg" alt="us-flag">
-  <p>Spanish</p>
+  <div *ngIf="showOptions" class="container-next" (click)="selectLanguage()">
+    <img class="flag" [src]="getUrlImage()" alt="us-flag">
+    <p>{{ nextlanguage() }}</p>
+  </div>
 </div>

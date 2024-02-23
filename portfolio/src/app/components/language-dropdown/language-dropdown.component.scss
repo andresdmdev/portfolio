@@ -4,10 +4,16 @@
   background-color: $bg-container-secondary;
   display: flex;
   flex-direction: row;
-  gap: 7px;
   padding: 6px 8px;
   border-radius: 10px;
   cursor: pointer;
+  position: relative;
+
+  .container-main {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+  }
 
   .flag {}
 
@@ -16,5 +22,26 @@
   p {
     font-family: inherit;
     margin: 0;
+  }
+}
+
+.container-next {
+  position: absolute;
+  background-color: $text-color;
+  opacity: 0.55;
+  top: 34px;
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  padding: 6px 8px;
+  border-color: $bg-track;
+  border-top: 2px solid;
+  border-radius: 0 0 10px 10px;
+  width: 70%;
+  cursor: pointer;
+
+  p {
+    color: $primary;
+    font-size: 0.75rem;
   }
 }
