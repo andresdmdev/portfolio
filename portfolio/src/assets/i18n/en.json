@@ -1,7 +1,5 @@
 {
-  "language": [
-    {
-      "title": "English"
-    }
-  ]
+  "language": {
+    "title": "English"
+  }
 }

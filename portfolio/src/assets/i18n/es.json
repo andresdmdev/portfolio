@@ -1,7 +1,5 @@
 {
-  "language": [
-    {
-      "title": "Español"
-    }
-  ]
+  "language": {
+    "title": "Español"
+  }
 }
