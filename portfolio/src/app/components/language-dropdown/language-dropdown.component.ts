@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslocoService } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-language-dropdown',
@@ -21,6 +22,9 @@ export class LanguageDropdownComponent implements OnInit {
   currentImage: string = this.LANGUAGES[0].url;
   showOptions: boolean = false;
 
+  constructor(private translocoService: TranslocoService) {
+  }
+
   ngOnInit(): void {
     if (localStorage.getItem('currentLanguage')) {
       this.currentLanguage = JSON.parse(localStorage.getItem('currentLanguage')!) as string;
@@ -38,6 +42,7 @@ export class LanguageDropdownComponent implements OnInit {
     if (this.currentLanguage !== language) {
       this.currentLanguage = language;
       localStorage.setItem('currentLanguage', JSON.stringify(language));
+      this.translocoService.setActiveLang(language === "Español" ? "es" : "en");
     }
   }
 
