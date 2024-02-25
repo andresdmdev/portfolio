@@ -1,0 +1,29 @@
+:root.dark {
+  --bg-color: #020617;
+  --text-color: hsl(219, 8%, 75%);
+  --bg-track: hsla(220, 65%, 95%, 0.442);
+  --bg-container-secondary: hsla(207, 90%, 72%, 0.16);
+}
+
+:root.light {
+  --bg-color: hsl(219, 60%, 92%);
+  --text-color: hsl(219, 8%, 35%);
+  --bg-track: hsla(220, 4%, 32%, 0.442);
+  --bg-container-secondary: hsla(207, 90%, 72%, 0.16);
+}
+
+$primary: var(--bg-color);
+$secundary: #77BEF8;
+$ternary: #FFB534;
+$quaternary: #77bef84c;
+$white: #F5F5F5;
+$ligth: hsl(219, 60%, 92%);
+$text-color: var(--text-color);
+$bg-track: var(--bg-track);
+$bg-container-secondary: var(--bg-container-secondary);
+
+/* --tittle-color: hsl(var(--second-hue), 15%, 15%);
+--text-color: hsl(var(--second-hue), 8%, 35%);
+--body-color: hsl(var(--second-hue), 60%, 92%);
+--container-color: #fff;
+--link-color-hover: #313030; */

@@ -1,0 +1,48 @@
+<section class="header-mobile">
+  <div class="header-theme">
+    <div *ngIf="theme == 'light'; then thenBlock else elseBlock"></div>
+    <ng-template #thenBlock>
+      <button (click)="setNewTheme(theme)">
+        <img src="../../../assets/images/icon-moon.svg" alt="menu" srcset="../../../assets/images/icon-moon.svg">
+      </button>
+    </ng-template>
+    <ng-template #elseBlock>
+      <button (click)="setNewTheme(theme)">
+        <img src="../../../assets/images/icon-sun.svg" alt="menu" srcset="../../../assets/images/icon-sun.svg">
+      </button>
+    </ng-template>
+  </div>
+  <button class="menu-icon" (click)="showMobileMenu()">
+    <img src="../../../assets/images/icon-menu.svg" alt="menu" srcset="../../../assets/images/icon-menu.svg">
+  </button>
+</section>
+
+<div *ngIf="enableMobileMenu">
+  <section class="menu-mobile">
+    <div class="menu-background" (click)="showMobileMenu()"></div>
+    <section class="menu-mobile-section">
+      <div class="menu-header">
+        <app-language-dropdown></app-language-dropdown>
+        <button (click)="showMobileMenu()">
+          <img class="close-icon" src="../../../assets/images/icon-close.svg" alt="menu"
+            srcset="../../../assets/images/icon-close.svg">
+        </button>
+      </div>
+      <div class="menu-content">
+        <img class="profile-icon" src="../../../assets/images/icon-profile.svg" alt="menu"
+          srcset="../../../assets/images/icon-profile.svg">
+        <h2 class="content-title">Andres Marquez</h2>
+        <div class="content-mail">
+          correo
+        </div>
+        <div class="content-list">
+          <ul>
+            <li>Home</li>
+            <li>Experience</li>
+            <li>Projects</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </section>
+</div>
