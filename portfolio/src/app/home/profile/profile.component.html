@@ -24,6 +24,9 @@
         srcset="../../../assets/images/icon-linkedin.svg" />
       <img src="../../../assets/images/icon-github.svg" alt="menu" srcset="../../../assets/images/icon-github.svg" />
     </div>
-    <app-open-cv [title]="t('profile.openCV')"></app-open-cv>
+    <div class="profile-actions">
+      <app-open-cv [title]="t('profile.openCV')"></app-open-cv>
+      <app-email></app-email>
+    </div>
   </div>
 </ng-container>

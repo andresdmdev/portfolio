@@ -1,0 +1,19 @@
+@import "../../../styles/colors.scss";
+
+.email-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 86px;
+  height: 26px;
+  border-radius: 9px;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid $main-color;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}

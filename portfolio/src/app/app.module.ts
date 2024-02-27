@@ -10,6 +10,7 @@ import { LanguageDropdownComponent } from './components/language-dropdown/langua
 import { HttpClientModule } from '@angular/common/http';
 import { TranslocoRootModule } from './transloco-root.module';
 import { OpenCvComponent } from './components/open-cv/open-cv.component';
+import { EmailComponent } from './components/email/email.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { OpenCvComponent } from './components/open-cv/open-cv.component';
     HeaderMobileComponent,
     HeaderDesktopComponent,
     LanguageDropdownComponent,
-    OpenCvComponent
+    OpenCvComponent,
+    EmailComponent
   ],
   imports: [
     BrowserModule,
