@@ -58,18 +58,37 @@
     align-items: center;
 
     .profile-icon {
-      margin-bottom: 15px;
+      width: 52px;
+      height: 52px;
     }
 
     .content-title {
-      margin-bottom: 60px;
+      font-size: 1.5rem;
+      margin-bottom: 15px;
     }
 
     .content-mail {
-      margin-bottom: 105px;
+      margin-bottom: 40px;
     }
 
-    .content-list {}
+    .content-list {
+      display: flex;
+      align-self: baseline;
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding-inline-start: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        li a {
+          font-size: 1rem;
+          font-weight: bold;
+        }
+      }
+    }
   }
 }
 

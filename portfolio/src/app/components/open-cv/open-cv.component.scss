@@ -1,0 +1,36 @@
+@import "../../../styles/colors.scss";
+
+.open-cv-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 86px;
+  height: 26px;
+  border-radius: 9px;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid $main-color;
+  cursor: pointer;
+
+  span {
+    font-size: 10px;
+    margin-left: 9px;
+    font-size: .625rem;
+    font-weight: bold;
+  }
+
+  .img-container {
+    background-color: $main-color;
+    width: 27px;
+    height: 100%;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 12px;
+      height: 12px;
+      margin: auto 0;
+    }
+  }
+}

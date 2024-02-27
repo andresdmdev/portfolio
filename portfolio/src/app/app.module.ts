@@ -9,6 +9,7 @@ import { HeaderDesktopComponent } from './header/header-desktop/header-desktop.c
 import { LanguageDropdownComponent } from './components/language-dropdown/language-dropdown.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TranslocoRootModule } from './transloco-root.module';
+import { OpenCvComponent } from './components/open-cv/open-cv.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { TranslocoRootModule } from './transloco-root.module';
     ProfileComponent,
     HeaderMobileComponent,
     HeaderDesktopComponent,
-    LanguageDropdownComponent
+    LanguageDropdownComponent,
+    OpenCvComponent
   ],
   imports: [
     BrowserModule,

@@ -8,11 +8,12 @@
   border-radius: 10px;
   cursor: pointer;
   position: relative;
+  width: 81px;
 
   .container-main {
     display: flex;
     flex-direction: row;
-    gap: 7px;
+    gap: 4px;
   }
 
   .flag {}
@@ -22,6 +23,9 @@
   p {
     font-family: inherit;
     margin: 0;
+    width: 47px;
+    font-size: 12px;
+    font-weight: bold;
   }
 }
 
@@ -29,19 +33,19 @@
   position: absolute;
   background-color: $text-color;
   opacity: 0.55;
-  top: 34px;
+  top: 29px;
   display: flex;
   flex-direction: row;
-  gap: 7px;
+  gap: 4px;
   padding: 6px 8px;
   border-color: $bg-track;
   border-top: 2px solid;
   border-radius: 0 0 10px 10px;
-  width: 70%;
+  width: 67%;
   cursor: pointer;
 
   p {
     color: $primary;
-    font-size: 0.75rem;
+    font-size: 0.65rem;
   }
 }

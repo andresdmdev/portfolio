@@ -1,5 +1,30 @@
 {
-  "language": {
-    "title": "Español"
+  "language": "Español",
+  "profile": {
+    "firstName": "Andres",
+    "fullName": "Andres Marquez",
+    "email": "andresdmf55@gmail.com",
+    "gretting": "Hola, soy Andrés.",
+    "welcomeText": {
+      "paragragh1": [
+        "FullStack Software Developer",
+        "paragragh1"
+      ],
+      "paragragh2": [
+        "Creating user interfaces, improving UI and UX with",
+        ""
+      ],
+      "paragragh3": [
+        " best practices.",
+        "paragragh3"
+      ]
+    },
+    "jobStatus": "Disponible para trabajar",
+    "openCV": "Abrir CV"
+  },
+  "menu": {
+    "home": "Inicio",
+    "experience": "Experiencia",
+    "projects": "Proyectos"
   }
 }

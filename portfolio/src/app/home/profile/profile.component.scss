@@ -1,0 +1,63 @@
+@import "../../../styles/colors.scss";
+
+.profile-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .profile-icon {
+    width: 52px;
+  }
+
+  .profile-status {
+    padding: 4px 8px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 6px;
+    background-color: $bg-light;
+    color: $secundary;
+  }
+}
+
+.profile-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.profile-text {
+  display: inline-block;
+}
+
+.paragragh1 {
+  color: $secundary;
+}
+
+.paragragh3 {
+  color: $ternary;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 10px 0 20px 0;
+
+  img {
+    width: 32px;
+    cursor: pointer;
+
+    &:hover {
+      transition: all .3s ease-in-out;
+      transform: scale(1.2);
+    }
+  }
+}
