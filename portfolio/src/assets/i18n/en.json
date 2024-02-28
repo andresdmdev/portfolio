@@ -20,7 +20,8 @@
       ]
     },
     "jobStatus": "Open to work",
-    "openCV": "Open CV"
+    "openCV": "Open CV",
+    "msgWhenCopied": "Copied!"
   },
   "menu": {
     "home": "Home",

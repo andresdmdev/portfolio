@@ -20,7 +20,8 @@
       ]
     },
     "jobStatus": "Disponible para trabajar",
-    "openCV": "Abrir CV"
+    "openCV": "Abrir CV",
+    "msgWhenCopied": "Copiado!"
   },
   "menu": {
     "home": "Inicio",
