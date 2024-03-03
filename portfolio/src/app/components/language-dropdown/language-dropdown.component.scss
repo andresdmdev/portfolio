@@ -1,4 +1,4 @@
-@import '../../../styles/colors.scss';
+@import '../../../styles/variables.scss';
 
 .container {
   background-color: $bg-container-secondary;
@@ -8,12 +8,11 @@
   border-radius: 10px;
   cursor: pointer;
   position: relative;
-  width: 81px;
 
   .container-main {
     display: flex;
     flex-direction: row;
-    gap: 4px;
+    gap: 6px;
   }
 
   .flag {}
@@ -23,8 +22,7 @@
   p {
     font-family: inherit;
     margin: 0;
-    width: 47px;
-    font-size: 12px;
+    font-size: $font-size-normal;
     font-weight: bold;
   }
 }
@@ -36,7 +34,7 @@
   top: 29px;
   display: flex;
   flex-direction: row;
-  gap: 4px;
+  gap: 6px;
   padding: 6px 8px;
   border-color: $bg-track;
   border-top: 2px solid;
@@ -46,6 +44,6 @@
 
   p {
     color: $primary;
-    font-size: 0.65rem;
+    font-size: $font-size-small;
   }
 }

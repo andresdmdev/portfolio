@@ -11,6 +11,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { TranslocoRootModule } from './transloco-root.module';
 import { OpenCvComponent } from './components/open-cv/open-cv.component';
 import { EmailComponent } from './components/email/email.component';
+import { ExperienceComponent } from './home/experience/experience.component';
+import { JobCardComponent } from './components/job-card/job-card.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { EmailComponent } from './components/email/email.component';
     HeaderDesktopComponent,
     LanguageDropdownComponent,
     OpenCvComponent,
-    EmailComponent
+    EmailComponent,
+    ExperienceComponent,
+    JobCardComponent
   ],
   imports: [
     BrowserModule,

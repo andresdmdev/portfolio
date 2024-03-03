@@ -1,0 +1,16 @@
+<div class="job-card-container">
+  <div class="timeline">
+    <span [ngClass]="elementPosition == 0 ? 'circle first' : 'circle'"></span>
+    <span [ngClass]="elementPosition == 0 ? 'firstLine' : 'line'"></span>
+  </div>
+  <div class="job-details">
+    <span>{{jobInfo.date}}</span>
+    <h3>{{jobInfo.position}}</h3>
+    <h6>{{jobInfo.company}}</h6>
+    <ul>
+      <ng-container *ngFor="let item of jobInfo.description">
+        <li>{{item}}</li>
+      </ng-container>
+    </ul>
+  </div>
+</div>

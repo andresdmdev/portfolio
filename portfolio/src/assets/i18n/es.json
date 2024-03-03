@@ -23,6 +23,33 @@
     "openCV": "Abrir CV",
     "msgWhenCopied": "Copiado!"
   },
+  "experience": {
+    "title": "Experiencia Laboral",
+    "jobs": [
+      {
+        "company": "Tecnologico",
+        "position": "Software Development Intern",
+        "date": "Oct 2023 - Actualmente",
+        "description": [
+          "Developed a web application for the management",
+          "Another task etc etc etc",
+          "Developed a web application for the management",
+          "Another task etc etc etc"
+        ]
+      },
+      {
+        "company": "Tecnologico",
+        "position": "Software Development Intern",
+        "date": "Oct 2023 - Actualmente",
+        "description": [
+          "Developed a web application for the management",
+          "Another task etc etc etc",
+          "Developed a web application for the management",
+          "Another task etc etc etc"
+        ]
+      }
+    ]
+  },
   "menu": {
     "home": "Inicio",
     "experience": "Experiencia",

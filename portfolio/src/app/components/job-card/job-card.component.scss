@@ -1,0 +1,69 @@
+@import "../../../styles/variables.scss";
+
+.job-card-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+  .timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 12px; // Depende del diametro del circulo
+
+    .circle {
+      background-color: $main-color;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      position: absolute;
+      top: 6px
+    }
+
+    .first {
+      margin-top: 6px;
+      top: 0px
+    }
+
+    .line {
+      width: 2px;
+      height: 100%;
+      background-color: $line-color;
+    }
+
+    .firstLine {
+      width: 2px;
+      height: 100%;
+      background-color: $line-color;
+      margin-top: 10px;
+    }
+
+  }
+
+  $font-size-smallX: 0.75rem;
+  $font-size-small: 0.85rem;
+  $font-size-normal: 1rem;
+  $font-size-base: 1.25rem;
+  $font-size-medium: 1.6rem;
+  $font-size-high: 2.25rem;
+
+  .job-details {
+    margin-left: 12px;
+
+
+    span {
+      font-size: $font-size-smallX;
+      font-weight: 600;
+      color: $text-light-color;
+    }
+
+    h3 {}
+
+    h6 {}
+
+    ul {
+      li {}
+    }
+  }
+}
