@@ -1,0 +1,20 @@
+@import "../../../styles/variables.scss";
+
+.projects-container {
+  margin-top: 50px;
+
+  .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 9px;
+
+    h2 {
+      font-size: $font-size-base;
+    }
+  }
+
+  .cards {
+    margin-top: 22px;
+  }
+}

@@ -1,4 +1,32 @@
-<p>profile works!</p>
 <ng-container *transloco="let t">
-  <p>{{ t("language.title") }}</p>
+  <div class="profile-header">
+    <div>
+      <img class="profile-icon" src="../../../assets/images/icon-profile.svg" alt="menu"
+        srcset="../../../assets/images/icon-profile.svg" />
+    </div>
+    <div class="profile-status">{{ t("profile.jobStatus") }}</div>
+  </div>
+  <h1 class="profile-title">{{ t("profile.gretting") }}</h1>
+  <p class="profile-text">
+    <span [ngClass]="t('profile.welcomeText.paragragh1')[1]">
+      {{ t("profile.welcomeText.paragragh1")[0] }}
+    </span>
+    <span [ngClass]="t('profile.welcomeText.paragragh2')[1]">
+      {{ t("profile.welcomeText.paragragh2")[0] }}
+    </span>
+    <span [ngClass]="t('profile.welcomeText.paragragh3')[1]">
+      {{ t("profile.welcomeText.paragragh3")[0] }}
+    </span>
+  </p>
+  <div class="profile-section">
+    <div class="profile-social-media">
+      <img src="../../../assets/images/icon-linkedin.svg" alt="menu"
+        srcset="../../../assets/images/icon-linkedin.svg" />
+      <img src="../../../assets/images/icon-github.svg" alt="menu" srcset="../../../assets/images/icon-github.svg" />
+    </div>
+    <div class="profile-actions">
+      <app-open-cv [title]="t('profile.openCV')"></app-open-cv>
+      <app-email></app-email>
+    </div>
+  </div>
 </ng-container>

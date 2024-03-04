@@ -1,0 +1,16 @@
+<ng-container *transloco="let t">
+  <div class="email-container">
+    <div class="email-section">
+      <span>{{t("profile.email")}}</span>
+      <div class="email-send">
+        <img src="../../../assets/images/icon-send.svg" alt="icon-send" srcset="../../../assets/images/icon-send.svg" />
+      </div>
+    </div>
+    <div class="email-box" (click)="copyEmail(email, $event)">
+      <img src="../../../assets/images/icon-copy.svg" alt="icon-copy" srcset="../../../assets/images/icon-copy.svg" />
+    </div>
+    <div class="email-msg" *ngIf="isCopy">
+      <span>{{ t("profile.msgWhenCopied") }}</span>
+    </div>
+  </div>
+</ng-container>

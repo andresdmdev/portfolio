@@ -1,0 +1,89 @@
+@import "../../../styles/variables.scss";
+
+.email-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.email-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+}
+
+.email-section {
+  display: flex;
+  height: 31px;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 9px 0 0 9px;
+  border: 2px solid $main-color;
+  gap: 7px;
+
+  span {
+    margin-left: 9px;
+    font-size: $font-size-smallX;
+    font-weight: bold;
+  }
+
+  .email-send {
+    background-color: $main-color;
+    width: 31px;
+    height: 33px;
+    border-radius: 7px 0 0 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1px;
+    margin-right: -1px;
+    cursor: pointer;
+
+    img {
+      width: 17px;
+      height: 17px;
+      transition: transform .3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.email-box {
+  background-color: $main-color;
+  width: 31px;
+  height: 35px;
+  border-radius: 0 7px 7px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1px;
+  cursor: pointer;
+
+  img {
+    width: 17px;
+    height: 17px;
+    transition: transform .3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+  }
+}
+
+.email-msg {
+  position: absolute;
+  top: -30px;
+  right: -3px;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .4s;
+
+  span {
+    font-size: $font-size-smallX;
+    font-weight: bold;
+  }
+}

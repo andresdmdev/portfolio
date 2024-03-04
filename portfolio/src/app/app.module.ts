@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -9,6 +10,13 @@ import { HeaderDesktopComponent } from './header/header-desktop/header-desktop.c
 import { LanguageDropdownComponent } from './components/language-dropdown/language-dropdown.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TranslocoRootModule } from './transloco-root.module';
+import { OpenCvComponent } from './components/open-cv/open-cv.component';
+import { EmailComponent } from './components/email/email.component';
+import { ExperienceComponent } from './home/experience/experience.component';
+import { JobCardComponent } from './components/job-card/job-card.component';
+import { ProyectsComponent } from './home/projects/proyects.component';
+import { ProjectCardComponent } from './components/project-card/project-card.component';
+import { ProjectCardCarouselComponent } from './components/project-card-carousel/project-card-carousel.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +25,20 @@ import { TranslocoRootModule } from './transloco-root.module';
     ProfileComponent,
     HeaderMobileComponent,
     HeaderDesktopComponent,
-    LanguageDropdownComponent
+    LanguageDropdownComponent,
+    OpenCvComponent,
+    EmailComponent,
+    ExperienceComponent,
+    JobCardComponent,
+    ProyectsComponent,
+    ProjectCardComponent,
+    ProjectCardCarouselComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    TranslocoRootModule
+    TranslocoRootModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

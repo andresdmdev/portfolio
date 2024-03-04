@@ -1,4 +1,4 @@
-@import "../../../styles/colors.scss";
+@import "../../../styles/variables.scss";
 
 .header-mobile {
   display: flex;
@@ -58,18 +58,37 @@
     align-items: center;
 
     .profile-icon {
-      margin-bottom: 15px;
+      width: 52px;
+      height: 52px;
     }
 
     .content-title {
-      margin-bottom: 60px;
+      font-size: $font-size-medium;
+      margin-bottom: 35px;
     }
 
     .content-mail {
-      margin-bottom: 105px;
+      margin-bottom: 65px;
     }
 
-    .content-list {}
+    .content-list {
+      display: flex;
+      align-self: baseline;
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding-inline-start: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        li a {
+          font-size: $font-size-base;
+          font-weight: bold;
+        }
+      }
+    }
   }
 }
 

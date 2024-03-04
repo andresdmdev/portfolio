@@ -3,6 +3,9 @@
   --text-color: hsl(219, 8%, 75%);
   --bg-track: hsla(220, 65%, 95%, 0.442);
   --bg-container-secondary: hsla(207, 90%, 72%, 0.16);
+  --secundary: #77BEF8;
+  --ternary: #FFB534;
+  --bg-links: #27344694;
 }
 
 :root.light {
@@ -10,17 +13,33 @@
   --text-color: hsl(219, 8%, 35%);
   --bg-track: hsla(220, 4%, 32%, 0.442);
   --bg-container-secondary: hsla(207, 90%, 72%, 0.16);
+  --secundary: #4892cf;
+  --ternary: #faa615;
+  --bg-links: #27344615;
 }
 
+$main-color: #77BEF8;
 $primary: var(--bg-color);
-$secundary: #77BEF8;
-$ternary: #FFB534;
+$secundary: var(--secundary);
+$ternary: var(--ternary);
 $quaternary: #77bef84c;
+$line-color: #D0D0D2;
 $white: #F5F5F5;
-$ligth: hsl(219, 60%, 92%);
+$light: hsl(219, 60%, 92%);
 $text-color: var(--text-color);
 $bg-track: var(--bg-track);
-$bg-container-secondary: var(--bg-container-secondary);
+$bg-links: var(--bg-links);
+$bg-container-secondary: var(- -bg-container-secondary);
+$bg-light: hsl(207, 90%, 72%, 16%);
+$text-light-color: hsl(207, 90%, 72%, 80%);
+
+// Font Size
+$font-size-smallX: 0.75rem;
+$font-size-small: 0.85rem;
+$font-size-normal: 1rem;
+$font-size-base: 1.25rem;
+$font-size-medium: 1.6rem;
+$font-size-high: 2.25rem;
 
 /* --tittle-color: hsl(var(--second-hue), 15%, 15%);
 --text-color: hsl(var(--second-hue), 8%, 35%);

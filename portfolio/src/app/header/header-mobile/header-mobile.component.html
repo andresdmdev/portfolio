@@ -28,21 +28,35 @@
             srcset="../../../assets/images/icon-close.svg">
         </button>
       </div>
-      <div class="menu-content">
-        <img class="profile-icon" src="../../../assets/images/icon-profile.svg" alt="menu"
-          srcset="../../../assets/images/icon-profile.svg">
-        <h2 class="content-title">Andres Marquez</h2>
-        <div class="content-mail">
-          correo
+      <ng-container *transloco="let t">
+        <div class="menu-content">
+          <img class="profile-icon" src="../../../assets/images/icon-profile.svg" alt="menu"
+            srcset="../../../assets/images/icon-profile.svg">
+          <h2 class="content-title">{{t("profile.fullName")}}</h2>
+          <div class="content-mail">
+            <app-email></app-email>
+          </div>
+          <div class="content-list">
+            <ul>
+              <li>
+                <a href="#projects" (click)="showMobileMenu()">
+                  {{t("menu.home")}}
+                </a>
+              </li>
+              <li>
+                <a href="#experience" (click)="showMobileMenu()">
+                  {{t("menu.experience")}}
+                </a>
+              </li>
+              <li>
+                <a href="#projects" (click)="showMobileMenu()">
+                  {{t("menu.projects")}}
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="content-list">
-          <ul>
-            <li>Home</li>
-            <li>Experience</li>
-            <li>Projects</li>
-          </ul>
-        </div>
-      </div>
+      </ng-container>
     </section>
   </section>
 </div>

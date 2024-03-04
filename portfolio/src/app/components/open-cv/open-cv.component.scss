@@ -1,0 +1,42 @@
+@import "../../../styles/variables.scss";
+
+.open-cv-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 91px;
+  height: 31px;
+  border-radius: 9px;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid $main-color;
+  cursor: pointer;
+
+  span {
+    margin-left: 9px;
+    font-size: $font-size-smallX;
+    font-weight: bold;
+  }
+
+  .img-container {
+    background-color: $main-color;
+    width: 31px;
+    height: 33px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    margin-top: -1px;
+    margin-right: -1px;
+
+    img {
+      width: 17px;
+      height: 17px;
+      margin: auto 0;
+      transition: transform .3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

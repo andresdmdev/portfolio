@@ -9,11 +9,11 @@ import { TranslocoService } from '@ngneat/transloco';
 export class LanguageDropdownComponent implements OnInit {
   readonly LANGUAGES = [
     {
-      name: 'English',
+      name: 'Español',
       url: 'us-flag.svg'
     },
     {
-      name: 'Español',
+      name: 'English',
       url: 'us-flag.svg'
     },
   ];
@@ -28,6 +28,7 @@ export class LanguageDropdownComponent implements OnInit {
   ngOnInit(): void {
     if (localStorage.getItem('currentLanguage')) {
       this.currentLanguage = JSON.parse(localStorage.getItem('currentLanguage')!) as string;
+      this.translocoService.setActiveLang(this.currentLanguage === "Español" ? "es" : "en");
     }
   }
 

@@ -1,5 +1,91 @@
 {
-  "language": {
-    "title": "Español"
+  "language": "Español",
+  "profile": {
+    "firstName": "Andres",
+    "fullName": "Andres Marquez",
+    "email": "andresdmf55@gmail.com",
+    "gretting": "Hola, soy Andrés.",
+    "welcomeText": {
+      "paragragh1": [
+        "FullStack Software Developer",
+        "paragragh1"
+      ],
+      "paragragh2": [
+        "Creating user interfaces, improving UI and UX with",
+        ""
+      ],
+      "paragragh3": [
+        " best practices.",
+        "paragragh3"
+      ]
+    },
+    "jobStatus": "Disponible para trabajar",
+    "openCV": "Abrir CV",
+    "msgWhenCopied": "Copiado!"
+  },
+  "experience": {
+    "title": "Experiencia Laboral",
+    "jobs": [
+      {
+        "company": "Tienda Pago",
+        "position": "Software Development Intern",
+        "date": "Oct 2023 - Actualmente",
+        "description": [
+          "Developed a web application for the management",
+          "Another task etc etc etc",
+          "Developed a web application for the management",
+          "Another task etc etc etc"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "projects": [
+      {
+        "name": "SVGL - A beautiful library with SVG logos",
+        "description": "",
+        "keyPoints": [
+          "100% de los resultados"
+        ],
+        "images": [
+          "example1.png",
+          "example2.png"
+        ],
+        "stack": [
+          {
+            "name": "Angular",
+            "images": [
+              "icon-angular.svg"
+            ],
+            "styles": "angularBtn"
+          },
+          {
+            "name": "Tailwind.CSS",
+            "images": [
+              "icon-tailwind.svg"
+            ],
+            "styles": "tailwindBtn"
+          }
+        ],
+        "links": [
+          {
+            "text": "Demo",
+            "url": "#",
+            "icon": "icon-demo.svg"
+          },
+          {
+            "text": "GitHub",
+            "url": "#",
+            "icon": "icon-github.svg"
+          }
+        ]
+      }
+    ]
+  },
+  "menu": {
+    "home": "Inicio",
+    "experience": "Experiencia",
+    "projects": "Proyectos"
   }
 }
