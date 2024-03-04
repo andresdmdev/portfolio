@@ -12,17 +12,18 @@ export class HeaderComponent implements OnInit {
     const isDarkPreferedTheme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
 
     if (isDarkPreferedTheme) {
-      this.setTheme("dark");
+      this.setTheme("light");
     }
   }
 
-  setTheme(theme: string) {
-    if (theme === 'light')
-      theme = 'dark';
-    else
-      theme = 'light';
+  setTheme(newTheme: string) {
+    if (newTheme === 'light') {
+      newTheme = 'dark';
+    } else {
+      newTheme = 'light';
+    }
 
-    this.theme = theme;
-    document.documentElement.className = theme;
+    this.theme = newTheme;
+    document.documentElement.className = newTheme;
   }
 }

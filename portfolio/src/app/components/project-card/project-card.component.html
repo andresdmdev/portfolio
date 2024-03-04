@@ -1,0 +1,32 @@
+<div class="project-card-container">
+  <h3>{{projectInfo.name}}</h3>
+  <ng-container *ngIf="projectInfo.description != ''">
+    <p>{{projectInfo.description}}</p>
+  </ng-container>
+  <ul *ngIf="projectInfo.keyPoints[0] != ''">
+    <ng-container *ngFor="let project of projectInfo.keyPoints">
+      <li>{{project}}</li>
+    </ng-container>
+  </ul>
+  <div class="stack">
+    <ng-container *ngFor="let stack of projectInfo.stack">
+      <div [ngClass]="stack.styles">
+        <img [src]="'../../../assets/images/' + stack.images" [alt]="stack.name"
+          [srcset]="'../../../assets/images/' + stack.images" />
+        <span>{{stack.name}}</span>
+      </div>
+    </ng-container>
+  </div>
+  <div class="images-container">
+    <app-project-card-carousel [slides]="projectInfo.images"></app-project-card-carousel>
+  </div>
+  <div class="project-links">
+    <ng-container *ngFor="let link of projectInfo.links">
+      <a [href]="link.url" target="_blank">
+        <img [src]="'../../../assets/images/' + link.icon" [alt]="link.icon"
+          [srcset]="'../../../assets/images/' + link.icon" />
+        <span>{{link.text}}</span>
+      </a>
+    </ng-container>
+  </div>
+</div>

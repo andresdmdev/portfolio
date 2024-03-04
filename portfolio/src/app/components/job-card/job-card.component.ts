@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { JobCardInfo } from 'src/app/interfaces/interfaces';
 
 @Component({
@@ -6,7 +6,7 @@ import { JobCardInfo } from 'src/app/interfaces/interfaces';
   templateUrl: './job-card.component.html',
   styleUrls: ['./job-card.component.scss']
 })
-export class JobCardComponent implements OnInit {
+export class JobCardComponent {
   @Input() jobInfo: JobCardInfo = {
     company: "",
     position: "",
@@ -14,9 +14,4 @@ export class JobCardComponent implements OnInit {
     description: [""]
   };
   @Input() elementPosition: number = 0;
-
-  ngOnInit(): void {
-    console.log(this.jobInfo);
-    console.log(this.elementPosition);
-  }
 }

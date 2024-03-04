@@ -27,7 +27,7 @@
     "title": "Experiencia Laboral",
     "jobs": [
       {
-        "company": "Tecnologico",
+        "company": "Tienda Pago",
         "position": "Software Development Intern",
         "date": "Oct 2023 - Actualmente",
         "description": [
@@ -36,16 +36,49 @@
           "Developed a web application for the management",
           "Another task etc etc etc"
         ]
-      },
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "projects": [
       {
-        "company": "Tecnologico",
-        "position": "Software Development Intern",
-        "date": "Oct 2023 - Actualmente",
-        "description": [
-          "Developed a web application for the management",
-          "Another task etc etc etc",
-          "Developed a web application for the management",
-          "Another task etc etc etc"
+        "name": "SVGL - A beautiful library with SVG logos",
+        "description": "",
+        "keyPoints": [
+          "100% de los resultados"
+        ],
+        "images": [
+          "example1.png",
+          "example2.png"
+        ],
+        "stack": [
+          {
+            "name": "Angular",
+            "images": [
+              "icon-angular.svg"
+            ],
+            "styles": "angularBtn"
+          },
+          {
+            "name": "Tailwind.CSS",
+            "images": [
+              "icon-tailwind.svg"
+            ],
+            "styles": "tailwindBtn"
+          }
+        ],
+        "links": [
+          {
+            "text": "Demo",
+            "url": "#",
+            "icon": "icon-demo.svg"
+          },
+          {
+            "text": "GitHub",
+            "url": "#",
+            "icon": "icon-github.svg"
+          }
         ]
       }
     ]

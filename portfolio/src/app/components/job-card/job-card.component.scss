@@ -41,29 +41,38 @@
 
   }
 
-  $font-size-smallX: 0.75rem;
-  $font-size-small: 0.85rem;
-  $font-size-normal: 1rem;
-  $font-size-base: 1.25rem;
-  $font-size-medium: 1.6rem;
-  $font-size-high: 2.25rem;
-
   .job-details {
     margin-left: 12px;
 
-
     span {
-      font-size: $font-size-smallX;
+      font-size: $font-size-small;
       font-weight: 600;
       color: $text-light-color;
     }
 
-    h3 {}
+    h3 {
+      font-size: $font-size-base;
+      font-weight: 700;
+      color: $ternary;
+      margin-top: 8px;
+    }
 
-    h6 {}
+    h6 {
+      font-size: $font-size-small;
+      line-height: normal;
+      color: $text-color;
+    }
 
     ul {
-      li {}
+      padding-inline-start: 15px;
+      margin-block-start: 0.8em;
+      margin-block-end: 1.75em;
+      list-style: disc $text-color;
+
+      li {
+        font-size: $font-size-normal;
+        color: $text-color;
+      }
     }
   }
 }

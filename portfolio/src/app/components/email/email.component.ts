@@ -10,6 +10,7 @@ export class EmailComponent {
   isCopy: boolean = false;
 
   copyEmail(text: string, event: Event) {
+
     if (!navigator.clipboard) {
       // Not suported
       return
@@ -22,7 +23,5 @@ export class EmailComponent {
     setTimeout(() => {
       this.isCopy = false;
     }, 1500);
-
-    event.stopPropagation();
   }
 }

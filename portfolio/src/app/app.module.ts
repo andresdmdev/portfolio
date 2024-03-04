@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -13,6 +14,9 @@ import { OpenCvComponent } from './components/open-cv/open-cv.component';
 import { EmailComponent } from './components/email/email.component';
 import { ExperienceComponent } from './home/experience/experience.component';
 import { JobCardComponent } from './components/job-card/job-card.component';
+import { ProyectsComponent } from './home/projects/proyects.component';
+import { ProjectCardComponent } from './components/project-card/project-card.component';
+import { ProjectCardCarouselComponent } from './components/project-card-carousel/project-card-carousel.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +29,16 @@ import { JobCardComponent } from './components/job-card/job-card.component';
     OpenCvComponent,
     EmailComponent,
     ExperienceComponent,
-    JobCardComponent
+    JobCardComponent,
+    ProyectsComponent,
+    ProjectCardComponent,
+    ProjectCardCarouselComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    TranslocoRootModule
+    TranslocoRootModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
