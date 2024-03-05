@@ -1,0 +1,14 @@
+<ng-container *transloco="let t">
+  <div class="skills-container">
+    <div class="title">
+      <img src="../../../assets/images/icon-skills.svg" alt="icon-skills"
+        srcset="../../../assets/images/icon-skills.svg" />
+      <h2>{{ t("skills.title") }}</h2>
+    </div>
+    <div class="stack-container">
+      <ng-container *ngFor="let stackItem of t('skills.stack')">
+        <img [src]="'../../../../../assets/images/' +  stackItem.image" [alt]="stackItem.name" />
+      </ng-container>
+    </div>
+  </div>
+</ng-container>

@@ -17,6 +17,7 @@ import { JobCardComponent } from './components/job-card/job-card.component';
 import { ProyectsComponent } from './home/projects/proyects.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { ProjectCardCarouselComponent } from './components/project-card-carousel/project-card-carousel.component';
+import { SkillsComponent } from './home/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ProjectCardCarouselComponent } from './components/project-card-carousel
     JobCardComponent,
     ProyectsComponent,
     ProjectCardComponent,
-    ProjectCardCarouselComponent
+    ProjectCardCarouselComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

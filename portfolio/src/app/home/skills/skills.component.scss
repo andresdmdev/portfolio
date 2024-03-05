@@ -1,0 +1,28 @@
+@import "../../../styles/variables.scss";
+
+.skills-container {
+  margin-top: 50px;
+
+  .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 9px;
+
+    h2 {
+      font-size: $font-size-base;
+    }
+  }
+}
+
+.stack-container {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  justify-items: center;
+
+  img {
+    width: 52px;
+  }
+}

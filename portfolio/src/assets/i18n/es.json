@@ -83,6 +83,43 @@
       }
     ]
   },
+  "skills": {
+    "title": "Skills",
+    "stack": [
+      {
+        "name": "HTML1",
+        "image": "icon-html5.svg"
+      },
+      {
+        "name": "HTML2",
+        "image": "icon-html5.svg"
+      },
+      {
+        "name": "HTML3",
+        "image": "icon-html5.svg"
+      },
+      {
+        "name": "HTML4",
+        "image": "icon-html5.svg"
+      },
+      {
+        "name": "HTML5",
+        "image": "icon-html5.svg"
+      },
+      {
+        "name": "HTML6",
+        "image": "icon-html5.svg"
+      },
+      {
+        "name": "HTML7",
+        "image": "icon-html5.svg"
+      },
+      {
+        "name": "HTML8",
+        "image": "icon-html5.svg"
+      }
+    ]
+  },
   "menu": {
     "home": "Inicio",
     "experience": "Experiencia",
