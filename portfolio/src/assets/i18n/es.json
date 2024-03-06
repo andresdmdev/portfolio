@@ -36,6 +36,28 @@
           "Developed a web application for the management",
           "Another task etc etc etc"
         ]
+      },
+      {
+        "company": "Tienda Pago",
+        "position": "Software Development Intern",
+        "date": "Oct 2023 - Actualmente",
+        "description": [
+          "Developed a web application for the management",
+          "Another task etc etc etc",
+          "Developed a web application for the management",
+          "Another task etc etc etc"
+        ]
+      },
+      {
+        "company": "Tienda Pago",
+        "position": "Software Development Intern",
+        "date": "Oct 2023 - Actualmente",
+        "description": [
+          "Developed a web application for the management",
+          "Another task etc etc etc",
+          "Developed a web application for the management",
+          "Another task etc etc etc"
+        ]
       }
     ]
   },
@@ -84,39 +106,106 @@
     ]
   },
   "skills": {
-    "title": "Skills",
+    "title": "Tech Skills",
     "stack": [
       {
-        "name": "HTML1",
-        "image": "icon-html5.svg"
+        "name": "TypeScript",
+        "image": "icon-typescript.svg"
       },
       {
-        "name": "HTML2",
-        "image": "icon-html5.svg"
+        "name": "JavaScript",
+        "image": "icon-javascript.svg"
       },
       {
-        "name": "HTML3",
-        "image": "icon-html5.svg"
+        "name": "CSharp",
+        "image": "icon-csharp.svg"
       },
       {
-        "name": "HTML4",
-        "image": "icon-html5.svg"
+        "name": "Python",
+        "image": "icon-python.svg"
+      },
+      {
+        "name": "Angular",
+        "image": "icon-angular.svg"
+      },
+      {
+        "name": "React",
+        "image": "icon-react.svg"
+      },
+      {
+        "name": "NodeJS",
+        "image": "icon-node.svg"
+      },
+      {
+        "name": "SQL Server",
+        "image": "icon-sql-server.svg"
+      },
+      {
+        "name": "MySQL",
+        "image": "icon-mysql.svg"
+      },
+      {
+        "name": "ExpressJS",
+        "image": "icon-express.svg"
+      },
+      {
+        "name": "DataDog",
+        "image": "icon-datadog.svg"
+      },
+      {
+        "name": "Jest",
+        "image": "icon-jest.svg"
+      },
+      {
+        "name": "Github",
+        "image": "icon-github.svg"
+      },
+      {
+        "name": "Git",
+        "image": "icon-git.svg"
+      },
+      {
+        "name": "Azure",
+        "image": "icon-azure.svg"
+      },
+      {
+        "name": "Azure",
+        "image": "icon-azure.svg"
       },
       {
         "name": "HTML5",
-        "image": "icon-html5.svg"
+        "image": "icon-html.svg"
       },
       {
-        "name": "HTML6",
-        "image": "icon-html5.svg"
+        "name": "CSS3",
+        "image": "icon-css.svg"
       },
       {
-        "name": "HTML7",
-        "image": "icon-html5.svg"
+        "name": "Tailwind.CSS",
+        "image": "icon-tailwind.svg"
       },
       {
-        "name": "HTML8",
-        "image": "icon-html5.svg"
+        "name": "SASS",
+        "image": "icon-sass.svg"
+      },
+      {
+        "name": "VS",
+        "image": "icon-visual-studio.svg"
+      },
+      {
+        "name": "VSCode",
+        "image": "icon-vscode.svg"
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "diplomas": [
+      {
+        "type": "Course",
+        "title": "Bachelor of Technology",
+        "description": "Universidad 'AJS' Mérida - Jun. 2021",
+        "image": "icon-check.svg"
       }
     ]
   },

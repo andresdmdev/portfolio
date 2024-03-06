@@ -1,0 +1,22 @@
+<ng-container *transloco="let t">
+  <div class="education-container">
+    <div class="title">
+      <img src="../../../assets/images/icon-education.svg" alt="icon-education"
+        srcset="../../../assets/images/icon-education.svg" />
+      <h2>{{ t("education.title") }}</h2>
+    </div>
+    <div class="education-info">
+      <ng-container *ngFor="let diploma of t('education.diplomas'); index as i">
+        <div>
+          <img [src]="'../../../assets/images/' + diploma.image" [alt]="diploma.title"
+            [srcset]="'../../../assets/images/' + diploma.image" />
+          <div class="education-data">
+            <span>{{diploma.type}}</span>
+            <h4>{{diploma.title}}</h4>
+            <p>{{diploma.description}}</p>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</ng-container>

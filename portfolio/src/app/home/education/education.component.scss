@@ -1,0 +1,58 @@
+@import "../../../styles/variables.scss";
+
+.education-container {
+  margin-top: 50px;
+
+  .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 9px;
+
+    h2 {
+      font-size: $font-size-base;
+    }
+  }
+
+  .img {
+    width: 20px;
+  }
+
+  .education-info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+
+    &>div {
+      display: flex;
+      flex-direction: row;
+      gap: 11px;
+    }
+
+    .education-data {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+
+      span {
+        font-size: $font-size-small;
+        color: $text-color;
+        font-weight: 400;
+      }
+
+      h4 {
+        font-size: $font-size-base;
+        color: $ternary;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: $font-size-small;
+        color: $text-color;
+        font-weight: 500;
+        margin: 0;
+      }
+    }
+  }
+}
