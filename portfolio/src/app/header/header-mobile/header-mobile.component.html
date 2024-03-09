@@ -1,4 +1,4 @@
-<section class="header-mobile">
+<div class="header-mobile-container">
   <div class="header-theme">
     <div *ngIf="theme == 'light'; then thenBlock else elseBlock"></div>
     <ng-template #thenBlock>
@@ -12,21 +12,15 @@
       </button>
     </ng-template>
   </div>
-  <button class="menu-icon" (click)="showMobileMenu()">
-    <img src="../../../assets/images/icon-menu.svg" alt="menu" srcset="../../../assets/images/icon-menu.svg">
-  </button>
-</section>
 
-<div *ngIf="enableMobileMenu">
-  <section class="menu-mobile">
-    <div class="menu-background" (click)="showMobileMenu()"></div>
-    <section class="menu-mobile-section">
+  <div id="menuToggle">
+    <input type="checkbox" name="showMenu" (click)="showMobileMenu()" [checked]="enableMobileMenu" />
+    <span></span>
+    <span></span>
+    <span></span>
+    <section id="menu">
       <div class="menu-header">
         <app-language-dropdown></app-language-dropdown>
-        <button (click)="showMobileMenu()">
-          <img class="close-icon" src="../../../assets/images/icon-close.svg" alt="menu"
-            srcset="../../../assets/images/icon-close.svg">
-        </button>
       </div>
       <ng-container *transloco="let t">
         <div class="menu-content">
@@ -58,5 +52,5 @@
         </div>
       </ng-container>
     </section>
-  </section>
+  </div>
 </div>
