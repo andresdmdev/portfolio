@@ -21,6 +21,7 @@ export class ProjectCardCarouselComponent {
   @Input() slides: string[] = [""];
 
   currentSlide = 0;
+  touchDistance = 0;
 
   constructor() { }
 
@@ -32,5 +33,16 @@ export class ProjectCardCarouselComponent {
   onNextClick() {
     const next = this.currentSlide + 1;
     this.currentSlide = next === this.slides.length ? 0 : next;
+  }
+
+  touchStart(event: TouchEvent) {
+    this.touchDistance += event.changedTouches[0].clientX;
+  }
+
+  touchEnd(event: TouchEvent) {
+    if (this.touchDistance < event.changedTouches[0].clientX)
+      this.onNextClick();
+    else
+      this.onPreviousClick();
   }
 }

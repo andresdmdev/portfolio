@@ -18,7 +18,7 @@
       height: 10px;
       border-radius: 50%;
       position: absolute;
-      top: 6px
+      top: 7px
     }
 
     .first {
@@ -27,13 +27,13 @@
     }
 
     .line {
-      width: 2px;
+      width: 1px;
       height: 100%;
       background-color: $line-color;
     }
 
     .firstLine {
-      width: 2px;
+      width: 1px;
       height: 100%;
       background-color: $line-color;
       margin-top: 10px;
@@ -51,7 +51,7 @@
     }
 
     h3 {
-      font-size: $font-size-base;
+      font-size: $font-size-baseXS;
       font-weight: 700;
       color: $ternary;
       margin-top: 8px;

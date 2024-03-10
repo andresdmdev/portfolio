@@ -57,32 +57,40 @@
 .images-container {
   margin-top: 24px;
   display: block;
-  height: 220px;
+  height: 250px;
   width: 100%;
 }
 
-.project-links {
+.buttons-container-desktop {
+  display: none;
+}
+
+.buttons-container-mobile {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  gap: 15px;
-  margin-top: 10px;
+}
 
-  a {
+@media (min-width: 600px) {
+  .images-container {
+    height: 400px;
+  }
+
+  .project-card-container h3 {
+    margin-top: 0px;
+  }
+
+  .project-header {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    gap: 5px;
-    padding: 8px 12px;
-    border-radius: 30px;
-    background-color: $bg-links;
   }
 
-  img {
-    width: 14px;
+  .buttons-container-desktop {
+    display: flex;
   }
 
-  span {
-    font-size: $font-size-normal;
-    font-weight: bold;
+  .buttons-container-mobile {
+    display: none;
   }
 }

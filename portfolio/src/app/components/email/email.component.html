@@ -9,7 +9,7 @@
     <div class="email-box" (click)="copyEmail(email, $event)">
       <img src="../../../assets/images/icon-copy.svg" alt="icon-copy" srcset="../../../assets/images/icon-copy.svg" />
     </div>
-    <div class="email-msg" *ngIf="isCopy">
+    <div class="email-msg scale-up-center" *ngIf="isCopy">
       <span>{{ t("profile.msgWhenCopied") }}</span>
     </div>
   </div>

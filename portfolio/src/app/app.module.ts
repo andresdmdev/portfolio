@@ -17,6 +17,10 @@ import { JobCardComponent } from './components/job-card/job-card.component';
 import { ProyectsComponent } from './home/projects/proyects.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { ProjectCardCarouselComponent } from './components/project-card-carousel/project-card-carousel.component';
+import { SkillsComponent } from './home/skills/skills.component';
+import { EducationComponent } from './home/education/education.component';
+import { FooterComponent } from './home/footer/footer.component';
+import { ProjectLinksBtnComponent } from './components/project-links-btn/project-links-btn.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +36,11 @@ import { ProjectCardCarouselComponent } from './components/project-card-carousel
     JobCardComponent,
     ProyectsComponent,
     ProjectCardComponent,
-    ProjectCardCarouselComponent
+    ProjectCardCarouselComponent,
+    SkillsComponent,
+    EducationComponent,
+    FooterComponent,
+    ProjectLinksBtnComponent
   ],
   imports: [
     BrowserModule,

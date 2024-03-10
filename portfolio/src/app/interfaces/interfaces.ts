@@ -19,7 +19,7 @@ type Stack = {
   styles: string
 }
 
-type Link = {
+export type Link = {
   text: string
   url: string
   icon: string

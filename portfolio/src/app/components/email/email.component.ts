@@ -11,17 +11,19 @@ export class EmailComponent {
 
   copyEmail(text: string, event: Event) {
 
-    if (!navigator.clipboard) {
-      // Not suported
-      return
+    if (!this.isCopy) {
+      if (!navigator.clipboard) {
+        // Not suported
+        return
+      }
+
+      navigator.clipboard.writeText(text)
+
+      this.isCopy = true;
+
+      setTimeout(() => {
+        this.isCopy = false;
+      }, 1500);
     }
-
-    navigator.clipboard.writeText(text)
-
-    this.isCopy = true;
-
-    setTimeout(() => {
-      this.isCopy = false;
-    }, 1500);
   }
 }
