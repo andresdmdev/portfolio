@@ -42,7 +42,7 @@
       }
 
       h4 {
-        font-size: $font-size-base;
+        font-size: $font-size-baseXS;
         color: $ternary;
         font-weight: 600;
       }
@@ -53,6 +53,14 @@
         font-weight: 500;
         margin: 0;
       }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .education-container {
+    .education-info {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }

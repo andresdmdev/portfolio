@@ -1,5 +1,37 @@
 <section class="header-desktop">
-  <p>header-desktop works!</p>
-  <button (click)="setNewTheme(theme)">{{theme == 'light' ? 'Dark Mode' : 'Light Mode'}}</button>
-  <p>end 2</p>
+  <div class="header-theme">
+    <div *ngIf="theme == 'light'; then thenBlock else elseBlock"></div>
+    <ng-template #thenBlock>
+      <button (click)="setNewTheme(theme)">
+        <img src="../../../assets/images/icon-moon.svg" alt="menu" srcset="../../../assets/images/icon-moon.svg">
+      </button>
+    </ng-template>
+    <ng-template #elseBlock>
+      <button (click)="setNewTheme(theme)">
+        <img src="../../../assets/images/icon-sun.svg" alt="menu" srcset="../../../assets/images/icon-sun.svg">
+      </button>
+    </ng-template>
+  </div>
+  <ng-container *transloco="let t">
+    <div class="content-list">
+      <ul>
+        <li>
+          <a href="#profile">
+            {{t("menu.home")}}
+          </a>
+        </li>
+        <li>
+          <a href="#experience">
+            {{t("menu.experience")}}
+          </a>
+        </li>
+        <li>
+          <a href="#projects">
+            {{t("menu.projects")}}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </ng-container>
+  <app-language-dropdown></app-language-dropdown>
 </section>

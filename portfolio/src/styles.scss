@@ -6,6 +6,8 @@ body {
   margin: 0;
   padding: 25px 20px;
   font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+  width: calc(100% - 40px);
 }
 
 button {
@@ -28,4 +30,12 @@ h6 {
 a {
   color: $text-color;
   text-decoration: none;
+}
+
+@media (min-width: 600px) {
+  body {
+    overflow-x: none;
+    width: 745px;
+    margin: 0 auto;
+  }
 }

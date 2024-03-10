@@ -1,0 +1,44 @@
+@import "../../../styles/variables.scss";
+
+.project-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 12px;
+    border-radius: 30px;
+    background-color: $bg-links;
+    transition: background .2s ease-in-out;
+
+    &:hover {
+      background-color: $main-color-light;
+    }
+  }
+
+  img {
+    width: 14px;
+  }
+
+  span {
+    font-size: $font-size-normal;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .project-links {
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+    span {
+      font-size: $font-size-smallX;
+    }
+  }
+}

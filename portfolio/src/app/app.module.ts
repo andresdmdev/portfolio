@@ -20,6 +20,7 @@ import { ProjectCardCarouselComponent } from './components/project-card-carousel
 import { SkillsComponent } from './home/skills/skills.component';
 import { EducationComponent } from './home/education/education.component';
 import { FooterComponent } from './home/footer/footer.component';
+import { ProjectLinksBtnComponent } from './components/project-links-btn/project-links-btn.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { FooterComponent } from './home/footer/footer.component';
     ProjectCardCarouselComponent,
     SkillsComponent,
     EducationComponent,
-    FooterComponent
+    FooterComponent,
+    ProjectLinksBtnComponent
   ],
   imports: [
     BrowserModule,

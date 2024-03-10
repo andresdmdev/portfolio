@@ -1,0 +1,9 @@
+<div class="project-links">
+  <ng-container *ngFor="let link of links">
+    <a [href]="link.url" target="_blank">
+      <img [src]="'../../../assets/images/' + link.icon" [alt]="link.icon"
+        [srcset]="'../../../assets/images/' + link.icon" />
+      <span>{{link.text}}</span>
+    </a>
+  </ng-container>
+</div>

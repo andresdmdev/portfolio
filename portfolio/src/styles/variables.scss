@@ -19,6 +19,7 @@
 }
 
 $main-color: #77BEF8;
+$main-color-light: #77bef876;
 $primary: var(--bg-color);
 $secundary: var(--secundary);
 $ternary: var(--ternary);
@@ -37,7 +38,8 @@ $text-light-color: hsl(207, 90%, 72%, 80%);
 $font-size-smallX: 0.75rem;
 $font-size-small: 0.85rem;
 $font-size-normal: 1rem;
-$font-size-base: 1.25rem;
+$font-size-baseXS: 1.25rem;
+$font-size-base: 1.5rem;
 $font-size-medium: 1.6rem;
 $font-size-high: 2.25rem;
 
