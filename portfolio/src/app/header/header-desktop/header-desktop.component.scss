@@ -8,6 +8,18 @@
   gap: 25px;
 }
 
+.moon {
+  &:hover {
+    filter: brightness(50%);
+  }
+}
+
+.sun {
+  &:hover {
+    filter: brightness(1.5);
+  }
+}
+
 .content-list {
   ul {
     list-style: none;

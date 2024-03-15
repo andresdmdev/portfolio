@@ -22,28 +22,66 @@
   p {
     font-family: inherit;
     margin: 0;
-    font-size: $font-size-normal;
+    font-size: $font-size-smallX;
     font-weight: bold;
   }
 }
 
 .container-next {
   position: absolute;
-  background-color: $text-color;
+  background-color: $bg-track-secundary;
   opacity: 0.55;
-  top: 29px;
+  top: 26px;
   display: flex;
   flex-direction: row;
   gap: 6px;
   padding: 6px 8px;
-  border-color: $bg-track;
-  border-top: 2px solid;
+  border-color: none;
+  border-top: 2px solid none;
   border-radius: 0 0 10px 10px;
   width: 67%;
   cursor: pointer;
 
   p {
-    color: $primary;
-    font-size: $font-size-small;
+    color: $text-color-secundary;
+    font-size: $font-size-smallXS;
+  }
+}
+
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) 100ms both;
+  animation: scale-up-center 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) 100ms both;
+}
+
+.hide {
+  display: none;
+}
+
+/**
+ * ----------------------------------------
+ * animation scale-up-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
 }

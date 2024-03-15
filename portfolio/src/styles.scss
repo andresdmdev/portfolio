@@ -8,6 +8,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
   width: calc(100% - 40px);
+  scroll-behavior: smooth;
 }
 
 button {

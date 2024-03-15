@@ -5,7 +5,7 @@
     <img class="arrow" src="../../../assets/images/icon-down-arrow.svg" alt="icon-down-arrow">
   </div>
 
-  <div *ngIf="showOptions" class="container-next" (click)="selectLanguage()">
+  <div [ngClass]="showOptions ? 'scale-up-center' : 'hide'" class="container-next" (click)="selectLanguage()">
     <img class="flag" [src]="getUrlImage()" alt="us-flag">
     <p>{{ nextlanguage() }}</p>
   </div>

@@ -1,21 +1,25 @@
 :root.dark {
   --bg-color: #020617;
   --text-color: hsl(219, 8%, 75%);
+  --text-color-secundary: #000209;
   --bg-track: hsla(220, 65%, 95%, 0.442);
   --bg-container-secondary: hsla(207, 90%, 72%, 0.16);
   --secundary: #77BEF8;
   --ternary: #FFB534;
   --bg-links: #27344694;
+  --language-next-container: hsl(218, 91%, 82%);
 }
 
 :root.light {
   --bg-color: hsl(219, 60%, 92%);
   --text-color: hsl(219, 8%, 35%);
+  --text-color-secundary: hsl(219, 60%, 92%);
   --bg-track: hsla(220, 4%, 32%, 0.442);
   --bg-container-secondary: hsla(207, 90%, 72%, 0.16);
   --secundary: #4892cf;
   --ternary: #faa615;
   --bg-links: #27344615;
+  --language-next-container: hsl(218, 37%, 61%);
 }
 
 $main-color: #77BEF8;
@@ -30,11 +34,14 @@ $light: hsl(219, 60%, 92%);
 $text-color: var(--text-color);
 $bg-track: var(--bg-track);
 $bg-links: var(--bg-links);
-$bg-container-secondary: var(- -bg-container-secondary);
+$bg-container-secondary: var(--bg-container-secondary);
 $bg-light: hsl(207, 90%, 72%, 16%);
 $text-light-color: hsl(207, 90%, 72%, 80%);
+$text-color-secundary: var(--text-color-secundary);
+$bg-track-secundary: var(--language-next-container);
 
 // Font Size
+$font-size-smallXS: 0.70rem;
 $font-size-smallX: 0.75rem;
 $font-size-small: 0.85rem;
 $font-size-normal: 1rem;

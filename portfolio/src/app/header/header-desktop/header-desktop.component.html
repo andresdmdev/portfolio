@@ -3,12 +3,14 @@
     <div *ngIf="theme == 'light'; then thenBlock else elseBlock"></div>
     <ng-template #thenBlock>
       <button (click)="setNewTheme(theme)">
-        <img src="../../../assets/images/icon-moon.svg" alt="menu" srcset="../../../assets/images/icon-moon.svg">
+        <img class="moon" src="../../../assets/images/icon-moon.svg" alt="moon"
+          srcset="../../../assets/images/icon-moon.svg">
       </button>
     </ng-template>
     <ng-template #elseBlock>
       <button (click)="setNewTheme(theme)">
-        <img src="../../../assets/images/icon-sun.svg" alt="menu" srcset="../../../assets/images/icon-sun.svg">
+        <img class="sun" src="../../../assets/images/icon-sun.svg" alt="sun"
+          srcset="../../../assets/images/icon-sun.svg">
       </button>
     </ng-template>
   </div>
